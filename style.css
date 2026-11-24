@@ -1,0 +1,474 @@
+/* Importē "Google Sans" šriftu no Google Fonts krātuves */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Tīmekļa lapas galvenā daļa (ķermenis) */
+body {
+    background-color: #e0f1ff; /* Fona krāsa visai lapai */
+    font-family: google sans; /* Šrifta saime (bez serifiem) */
+    font-size: 16pt; /* Teksta izmērs */
+    background: #FFFF;
+background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(135, 135, 222, 1) 35%, rgba(0, 212, 255, 1) 100%);
+background-image: url(https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+
+.logo{
+    width: 75px;
+}
+/* 1. un 2. līmeņa virsraksti */
+h1, h2 {
+    text-align: center; /* Teksta izlīdzināšana centrā */
+    color: #014f86; /* Teksta krāsa (zila) */
+    font-family: google sans; /* Šrifta saime (bez serifiem) */
+}
+
+/* Navigācijas josla */
+nav {
+    background-color: black; /* Navigācijas fona krāsa (melna) */
+    text-align: center; /* Navigācijas elementu izlīdzināšana centrā */
+}
+
+/* Saites, kas atrodas navigācijā */
+nav a {
+    color: aliceblue; /* Saitas teksta krāsa */
+    text-decoration: none; /* Noņem pasvītrojumu saitei */
+}
+
+/* Tabula, tabulas rindiņas un šūnas */
+table, tr, td {
+    border: 1px solid #014f86; /* Apmales platums (1px), stils (nepārtraukta) un krāsa */
+    border-collapse: collapse; /* Apvieno blakus esošās apmales vienā kopējā līnijā */
+}
+
+/* Visas parastās bildes lapā */
+img {
+    width: 300px; /* Attēla platums */
+}
+
+/* Bildes, kas atrodas lapas kājenē (footer) */
+footer img {
+    width: 100px; /* Attēla platums kājenē */
+}
+
+/* Bildes, kas atrodas tabulā */
+table img {
+    width: 150px !important; /* Attēla platums tabulā (!important piešķir visaugstāko prioritāti) */
+}
+
+/* Sekcija ar ID "sec1" */
+section#sec1 {
+    background-color: #ced3e7; /* Sekcijas fona krāsa */
+    text-align: center; /* Teksta izlīdzināšana centrā */
+}
+
+/* Sekcija ar ID "sec2" */
+section#sec2 {
+    background-color: #fff7bc; /* Sekcijas fona krāsa */
+}
+
+/* Sekcija ar ID "sec3" */
+section#sec3 {
+    background-color: #000000; /* Sekcijas fona krāsa */
+    color: white;
+}
+section#sec3 h2 {
+    color: white;
+}
+section#sec4 h2 {
+    color: white;
+}
+section#sec4 {
+    color: white;
+}
+
+/* Lapas kājene (kājene apakšā) */
+footer {
+    text-align: center; /* Teksta un elementu izlīdzināšana centrā */
+    background-color: rgb(178, 220, 245); /* Kājenes fona krāsa */
+}
+
+/* Ievades lauki, izvēlnes un teksta laukumi formā */
+form input, form select, form textarea {
+    display: block; /* Parāda elementus kā blokus (katrs jaunā rindiņā) */
+    width: 450px; /* Elementu platums */
+    box-sizing: border-box; /* Ietver iekšējās atkāpes un apmales elementa kopējā platumā */
+}
+
+/* Ievades lauki, kas atrodas div elementā ar klasi "jautajums" */
+div.jautajums input {
+    display: inline; /* Parāda elementu vienā rindiņā ar pārējiem elementiem */
+    width: 50px; /* Saīsināts platums */
+}
+
+/* Forma */
+form {
+    width: 500px; /* Formas platums */
+    margin: auto; /* Centrē formu horizontāli ekrānā */
+}
+
+/* Teksta rindkopas formatēšana */
+p {
+    font-family: monospace; /* Monospace jeb vienāda platuma burtu šrifts */
+    letter-spacing: 0px; /* Attālums (atstarpe) starp burtiem */
+}
+
+/* BOX MODEL (Bloka modelis) - ārejas atkāpes (Margin) */
+
+/* Vispārējā atlase (*): attiecas uz absolūti visiem elementiem lapā */
+* {
+    margin: 0px; /* Noņem visas ārējās noklusējuma atkāpes */
+}
+
+/* Tīmekļa lapas ķermenis */
+body {
+    margin: 0px; /* Noņem lapas ķermeņa ārējās atkāpes */
+}
+
+/* Navigācijas josla */
+nav {
+    margin-bottom: 30px; /* Ārējā atkāpe apakšā (attālums līdz nākamajam elementam) */
+}
+
+/* Bildes, kas atrodas sekcijā ar ID "sec1" */
+section#sec1 img {
+    display: block; /* Pārvērš attēlu par bloka elementu */
+    margin: auto; /* Centrē attēlu horizontāli */
+    margin-bottom: 50px; /* Ārējā atkāpe apakšā */
+}
+
+/* 1., 2. un 3. līmeņa virsraksti */
+h1, h2, h3 {
+    margin-bottom: 20px; /* Ārējā atkāpe apakšā */
+}
+
+/* Tabula */
+table {
+    margin: auto; /* Centrē tabulu horizontāli */
+    margin-bottom: 20px; /* Ārējā atkāpe apakšā */
+}
+
+/* Padding - iekšējās atkāpes (saturam no elementa apmalēm) */
+
+/* Navigācijas josla */
+nav {
+    padding: 20px; /* Iekšējā atkāpe no visām pusēm */
+}
+
+/* Tabulas šūnas */
+td {
+    padding: 5px 10px; /* Iekšējā atkāpe: 5px augšā/apakšā, 10px pa labi/pa kreisi */
+}
+
+/* Formas ievades lauki un teksta laukumi */
+form input, form textarea, form select {
+    padding: 3px 5px; /* Iekšējā atkāpe: 3px augšā/apakšā, 5px pa labi/pa kreisi */
+    font-size: 16px;
+}
+
+/* Visas sekcijas lapā */
+section {
+    padding: 30px; /* Iekšējā atkāpe no visām pusēm */
+}
+
+/* Rindkopas (paragrafi) */
+p {
+    max-width: 1000px; /* Maksimālais pieļaujamais teksta bloka platums */
+    margin: 20px auto; /* Ārējā atkāpe: 20px augšā/apakšā un automātiska centrēšana pa horizontāli */
+}
+
+/* Flexbox izkārtojums */
+
+/* Navigācijas josla */
+nav {
+    display: flex; /* Aktivizē elastīgo (Flexbox) konteinera izkārtojumu */
+    justify-content: space-around; /* Vienmērīgi izsvaida elementus ar atstarpēm ap tiem */
+}
+
+/* Lapas galvene (header) */
+header {
+    display: flex; /* Aktivizē Flexbox izkārtojumu */
+    justify-content: center; /* Centrē elementus horizontāli */
+    align-items: center; /* Centrē elementus vertikāli */
+    gap: 30px; /* Atstarpe starp elementiem galvenē */
+
+}
+
+/* Kase vai bloks ar klasi "row" (rinda) */
+.row {
+    display: flex; /* Aktivizē Flexbox izkārtojumu */
+    justify-content: center; /* Centrē elementus horizontāli */
+    align-items: center; /* Centrē elementus vertikāli */
+    gap: 30px; /* Bez atstarpes starp rindas elementiem */
+}
+
+/* Attēli, kas atrodas elementā ar klasi "row" */
+.row img {
+    width: 20%; /* Attēla platums ir 20% no tēva konteinera platuma */
+}
+
+/* Attēlu galerija ar klasi "gallery" */
+.gallery {
+    display: grid; /* Aktivizē režģa (Grid) izkārtojumu */
+    grid-template-columns: repeat(3, 1fr); /* Izveido 3 stabiņus ar automātisku platumu */
+    gap: 30px; /* Atstarpes starp režģa šūnām */
+}
+
+/* Attēli galerijā */
+.gallery img {
+    width: 100% !important; /* Attēla platums ir 100% (ar visaugstāko prioritāti) */
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Flex un GRID */
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-footer, .right-footer{
+    width: 50%;
+}
+
+.left-footer h3{
+    text-align: center;
+}
+
+/* pseido selektori */
+nav a:hover{
+    color: blueviolet;
+}
+
+.gallery img{
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+form input:focus-visible,form textarea:focus-visible,form select:focus-visible{
+    outline: 1px solid rgb(0, 183, 255);
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px rgb(0, 213, 255);
+}
+
+.gallery img:nth-child(odd){
+outline: 2px solid blue;
+}
+.gallery img:nth-child(even){
+outline: 2px solid rgb(255, 0, 0);
+}
+
+:root {
+font-size: 16px;
+}
+
+/* form input:not([type="text"]){
+   outline: 2px solid rgb(0, 119, 255); 
+} */
+
+/* :lang(lv){
+    background-color: white;
+} */
+
+/* Gradienti */
+
+nav{
+    background-image: linear-gradient(45deg, #3700ff, #0000,#3700ff);
+}
+
+#submit{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* Transformācijas */
+
+header{
+    perspective: 100px;
+}
+
+
+header h1{
+
+
+
+/* 3d rotation */
+
+/* transform: rotateY(25deg) scale(.8) skewX(-10deg) translate(-10px, -50px); */
+
+
+}
+/* CSS animations */
+
+
+
+#sec2{
+    opacity: 0;
+    transform: translate(0px,100px);
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes fade-in{
+from{
+    opacity: 0;
+    transform: translate(0px,1000px);
+}
+to{
+    opacity: 1;
+    transform: translate(0px,0px);
+}
+
+
+}
+
+/* Pozicionēšana */
+
+.position{
+    width: 500px;
+    height: 500px;
+    background-color: #000000;
+     position: static; /* Noklusētā vērtība */
+    position: relative; /*  Nobīda elementu no defoltās pozīcijas */
+    left: 500px;
+    top: -500px;
+    z-index: -5;
+
+    /* Absolūta pozicionēšana */
+
+    position: absolute; /*  Novieto elementu neatkarīgi no citiem */
+    bottom: 0px;
+    right: 0px;
+    left: auto;
+    top: auto;
+    z-index: 10;
+    position: fixed; /* Padara elementu nekustīgu */
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 5000;
+}
+
+.position{
+    bottom: -400px;
+    display: none;
+}
+
+.position:hover{
+    bottom: 0px;
+    transition: .5s cubic-bezier(.25,.1,.25,1);
+}
+
+
+/* Mobile version */
+@media screen and (max-width: 767px){
+    .row{
+        flex-direction: column;
+    }
+img{
+    width: 100%;
+    flex-direction: column; /* Elementu izvietojuma virziens: kolonna (vertikāli) */
+}
+
+
+
+table{
+    width: 100%;
+    transform: scale(.5);
+display: block;
+margin: 10px auto;
+}
+form{
+    width: 100%;
+}
+form input, form textarea, form select{
+width: 100%;
+}
+
+.jautajums{
+    margin-top: 15px;
+}
+
+footer{
+    flex-direction: column;
+    .right-footer,.left-footer{
+        width: auto;
+    }
+}
+
+.position{
+    transform: scale(.6);
+    bottom: 0px;
+}
+.gallery{
+    grid-template-columns: auto;
+}
+
+}
+/* Planšetdatoru versija (ekrāniem ar platumu 768px un mazāk) */
+@media screen and (max-width: 768px) {
+    
+    /* Padara formu elastīgu, lai ievades lauki nesaspiestos */
+    form {
+        width: 90%;
+        max-width: 450px;
+        box-sizing: border-box;
+    }
+
+    /* Ievades lauki un izvēlnes aizņem visu formas pieejamo platumu */
+    form input, form select, form textarea {
+        width: 100%;
+    }
+
+    /* Izpleš tabulu pa visu dzeltenās sekcijas platumu */
+    table {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/* Mobile version */
+@media screen and (max-width: 767px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Atjaunots pēc pēdējiem ekrānuzņēmumiem: precīzs oriģināls nav saglabāts. */
+body { background: #fff; background-image: none; }
+nav { margin-bottom: 30px; }
+.gallery img { outline: 2px solid blue; }
+footer { align-items: center; gap: 20px; padding: 20px; }
+footer p { flex: 1; text-align: center; }
+.footer-links { display: flex; gap: 20px; }
+@media screen and (max-width: 767px) {
+ nav { position: static; flex-direction: column; gap: 10px; }
+ footer { flex-direction: column; }
+ .footer-links { flex-wrap: wrap; justify-content: center; }
+}
